@@ -1,15 +1,8 @@
 <template>
   <div>
 
-<!-- boton para agregar notas con modal de boostrap -->
-    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
-  Agregar
-</button><br>
 
-<!-- div donde implemento el buscador  -->
-<div class="input-group">
-<input id="filtrar" type="text" class="form-control" placeholder="buscar">
-</div> <br>
+<addbus/>
 
 <!-- plantilla de la funcion modal de boostrap -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-dismiss="modal" >
@@ -88,26 +81,7 @@
 </table>
   
 <!-- ///////////////////////////////////////// -->
-    <hr> 
-    <!-- lista de notas de esta forma mandamos a llamar los datos pero con lista  -->
-    <!-- <ul class="list-group">
-         <li class="list-group-item" 
-            v-for="(item, index) in notas" :key="index">
-          <span class="badge badge-primary float-right">
-            {{item.updated_at}}
-          </span>
-          <p>{{item.nombre}}</p>
-          <p>{{item.descripcion}}</p>
-          <p>
-            <button class="btn btn-warning btn-sm" 
-                @click="editarFormulario(item)" data-toggle="modal" data-target="#exampleModal">Editar</button>
-            <button class="btn btn-danger btn-sm" 
-                @click="eliminarNota(item, index)">Eliminar</button>
-          </p>
-        </li>
-        
-    </ul> -->
-   
+
   </div>
  
 </template>
